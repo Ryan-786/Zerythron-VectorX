@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+sdf version="1.6">
+  <world name="urban_disaster">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <model name="collapsed_building_1">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>20 20 15</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>20 20 15</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
